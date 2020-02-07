@@ -1,38 +1,382 @@
-.App {
+*{
+  padding:0;
+  margin:0; 
+  }
+
+.nav{
+  
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+  list-style-type: none;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  background: white;
+  z-index: 99999;
+}
+
+
+li{
+  list-style: none;
+}
+
+.list-subMenu{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+li:hover .list-subMenu{
+  display: block;
+}
+
+
+.list-nav{
+  margin-right: 20px;
+}
+
+
+.logoDoc {
+  width: 268px;
+  height: 33px;
+}
+
+.menu{
+  display: flex;
+  justify-content:space-around ;
+ 
+}
+
+a{
+  text-decoration: none;
+    color:#5b6b7f;
+}
+
+.logoheader{
+
+display: block;
+margin: 0 auto;
+padding: 70px;
+}
+.making {
+  text-align: center;
+  color: #00b39b;
+}
+
+.paragraphes
+{
+  line-height: 1.5;
+  padding-top: 1%;
+  padding: 15px;
+  margin :10px ;
+  letter-spacing: .3px;
+  text-align: center; 
+  font-weight: 400;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #747474; 
+  display: flex;
+  justify-items: center;
+ 
+ 
+}
+
+.paragraphes p {
+    margin: .8em 0;
+    line-height: 1.75;
+    font-weight: 400;
+    
+}
+
+.header-parag{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 146px;
+}
+
+.cards-elm{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-left:150px;
+}
+
+.Cards-desc{
+
+  width: 60%;
+  margin: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+
+
+.countries{
+  border-radius: 8px;
+  height: 30px;
+  text-transform: uppercase;
+  min-width: 180px;
+}
+
+.sel{
+  display: flex;
+
+}
+
+.boxpic
+{
+ width: 500px;
+}
+
+.boxText
+{
+  margin: 10px;
+  color:white;  
+
+}
+
+.boxTitle{
+  margin: 10px;
+  font-size: .875em;
+  font-weight: 200;   
+  color:white;
+}
+
+.patient{
+  width: 60%;
+  margin: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  background-color:#00ccb1;
+  height: 450px;
+}
+
+.doctor{
+
+  width: 60%;
+  margin: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  background-color:#3d83df;
+  height: 450px;
+}
+
+
+
+.comp{
+  display : flex ;
+  justify-content: space-between;
+  padding-top: 100px;
+  margin-left: 150px;
+}
+
+.hovercolor :hover
+{
+    fill:#00b39b; 
+}
+
+
+.comp h1 {
+  font-size: 2.125rem;
+  color: #00b39b;
+}
+
+.logocom {
+  display : flex ;
+  flex-wrap: wrap;
+ 
+}
+.logocom a {
+  margin: 10px;
+}
+
+
+li a {
+    fill:grey; 
+}
+
+.det
+{
+    position: relative;
+    background: #dcf8f7;
+    display: flex;
+    overflow: hidden;
+    padding: 20px   ;
+    max-height: 581px; 
+   
+
+}
+.star{
+  padding-top:1% ;
+}
+
+.theworld
+{
+    padding-top:25px ;
+    line-height: 1.7142857143;
+    padding-left: 150px;
+}
+
+.det p {
+  padding-left: 150px;
+  padding-top: 15px;
+  width :55%
+}
+
+
+.statistics{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.decalage{
+  margin-top  : 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.col-2
+{
+    
+    line-height: 1.5;
+    padding-top: 1%;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right : 20px;
+    letter-spacing: .3px;
+    max-width: 80%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.05);
+    height: 201px;
+    width: 195px;
+    font-size: .8125em;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.desc h1
+ {
+    padding: 5%;
+    margin:0 auto  ;
+    letter-spacing: .3px;
+    text-align: center;
+    max-width :460px;
+    color: #00b39b;
+   
+ }
+.desc p{
+    
+    margin:0 auto ;
+    letter-spacing: .3px;
+    text-align: center;
+    max-width :460px;
+}
+
+ h3, li , ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type :none ;
+}
+
+.titlestat 
+{
+    color : #00b39b; 
+    font-size: 25px;
+}
+
+.theworld{
+  font-size: 2.125rem;
+  color: #00b39b;
+}
+
+.Places
+{
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin :8%;
+    padding: 1%;
+    box-shadow: yellow;
+    
+}
+
+
+.btn--small {
+  font-size: .625rem;
+  padding: 1em 1.5em;
+ 
+}
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 1.1666666667em 1.5em;
+  background: #3d83df;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .04em;
+  font-size: .75rem;
+  text-align: center;
+  text-decoration: none!important;
+  text-transform: uppercase;
+  transition: all .2s ease 0s;
+}
+
+.office
+{
+    box-shadow: 2px 2px 2px 2px #e4e4e4;
+    margin : 5px;
+    border-radius: 5px;
+}
+
+.office__desc {
+  display : flex ;
+  justify-content: space-between;
+}
+
+.offices{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
 }
 
-.App-link {
-  color: #61dafb;
+.space{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-footer {
+  border-top:1px solid ;
+  font-size:.75em;
+  color:grey;
+  text-align:center;
+  padding:1em 0;
+}
+.footer-container p a {
+  font-size:10px;
+}
+
+.imagedoc{
+  margin-top: 20px;
+}
+
+
+
+li :hover span {
+  color: #00b39b;
 }
